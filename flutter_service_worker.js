@@ -91,7 +91,7 @@ self.addEventListener("install", (event) => {
       try{
               return cache.addAll(
         CORE.map((value) => new Request(value, {'cache': 'reload'})));
-      } catche((e) {
+      } catch((e) {
                console.log(e)
     }
     })
